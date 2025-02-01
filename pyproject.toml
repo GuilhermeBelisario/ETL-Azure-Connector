@@ -1,0 +1,26 @@
+[project]
+name = "etl-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Guilherme Belisario",email = "gbo2000@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12.1, <4"
+dependencies = [
+    "pdfplumber (>=0.11.5,<0.12.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+    "duckdb (>=1.1.3,<2.0.0)",
+    "document (>=1.0,<2.0)",
+    "faker (>=35.0.0,<36.0.0)",
+    "reportlab (>= 4.2.5)",
+    "python-docx (>=1.1.2,<2.0.0)",
+    "azure-storage-blob (>=12.24.1,<13.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
