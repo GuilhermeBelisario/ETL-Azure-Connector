@@ -143,5 +143,4 @@ poetry run python src/main.py
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
 ## Licença
-Este projeto está licenciado sob a licença MIT.# ETL-Azure-Connector
-# ETL-Azure-Connector
+Este projeto está licenciado sob a licença MIT.
