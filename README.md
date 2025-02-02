@@ -109,7 +109,7 @@ poetry shell
 **Gere os arquivos executando o gerador:**
 
 ```
-python poetry run data/file_swarm_generator.py
+poetry run poetry data/file_swarm_generator.py
 ```
 
 ## Testes
