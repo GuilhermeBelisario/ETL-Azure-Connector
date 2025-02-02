@@ -33,21 +33,18 @@ for file_name in (os.listdir(raw_path)):
                     text_list = pdf_content.split(' ')
                     df = pd.DataFrame(text_list)
                     processed_df = process_data(df,data,customer)
+                    tool.close()
                     if processed_df is not None:
                         write_tables(processed_df,csv_path,file_path,raw_path_processed)
                         
         elif file_name.endswith('.xlsx'):
-            try:
 
-                df = pd.read_excel(file_path, engine='openpyxl')
-                processed_df = process_data(df, data, customer)
-                if processed_df is not None:
-                    write_tables(processed_df,csv_path,file_path,raw_path_processed)
-                else:
-                    print(f"[WARNING] The file {file_name} is null")
-
-            except Exception as e:
-                print(f"[ERROR] processing the file {file_name}: {e}")
+            df = pd.read_excel(file_path, engine='openpyxl')
+            processed_df = process_data(df, data, customer)
+            if processed_df is not None:
+                write_tables(processed_df,csv_path,file_path,raw_path_processed)
+            else:
+                print(f"[WARNING] The file {file_name} is null")
 
         elif file_name.endswith('.docx'):
 
