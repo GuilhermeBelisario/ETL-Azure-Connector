@@ -74,8 +74,8 @@ A estrutura do projeto é organizada da seguinte forma:
 As variáveis de ambiente necessárias para o projeto devem ser definidas no arquivo .env. Um exemplo de configuração pode ser:
 
 * **BASE_PATH** - O path absoluto do diretorio
-* **CONTAINER_NAME** - Nome do container
 * **CUSTOMER_CSV_PATH** - O path absoluto até o csv
+* **CONTAINER_NAME** - Nome do container
 * **AZURE_STORAGE_CONNECTION** - Chave de acesso
 
 ### Instalação
@@ -117,7 +117,7 @@ poetry run python data/file_swarm_generator.py
 **Rodando os testes:**
 
 ```
-pytest tests/ -v
+poetry run pytest tests/ -v
 ```
 
 ## Executando o Projeto
